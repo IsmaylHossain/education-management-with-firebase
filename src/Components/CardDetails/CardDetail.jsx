@@ -46,7 +46,7 @@ const CardDetail = ({cardDetails}) => {
         <figure className="relative w-full rounded-2xl">
             <img className="w-full rounded-2xl" src={image} alt="" />
             <div className="absolute bottom-0 left-0 bg-black w-full bg-opacity-50 rounded-b-2xl">
-                <button style={textStyle} onClick={handleAddToDonate} className="btn btn-primary border-none m-5">Donate ${price}</button>
+                <button style={textStyle} onClick={handleAddToDonate} className="btn btn-primary border-none m-5">Buy Now ${price}</button>
             </div>
         </figure>
         <div className="my-5 w-full">
