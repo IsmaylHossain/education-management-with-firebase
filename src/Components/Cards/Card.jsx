@@ -21,8 +21,8 @@ background: comp_color
 return (
 <div>
 <Link to={`/cards/${id}`}>
-<div className="mx-auto card w-72 bg-base-100 shadow-xl" style={textStyle}>
-<figure><img className="w-72" src={image} alt="Shoes" /></figure>
+<div className="mx-auto card w-80 bg-base-100 shadow-xl" style={textStyle}>
+<figure><img className="w-80" src={image} alt="Shoes" /></figure>
 <div className="card-body rounded-b-2xl">
 <p style={{background: comp_color , color: te_color}} className="w-20  rounded-md text-center">{components}</p>
 <h2 className="card-title w-72" style={backStyle}>{title}</h2>

@@ -6,8 +6,9 @@ import Register from "../pages/Register/Register";
 import News from "../pages/News/News";
 import PrivateRoute from "./PrivateRoute";
 import ErrorElement from "../Components/ErrorElement/ErrorElement";
-
-
+import CardDetails from "../Components/CardDetails/CardDetails";
+import About from "../Components/About/About";
+ 
 const router = createBrowserRouter([
     {
         path: '/',
@@ -31,7 +32,18 @@ const router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: '/cards/:id',
+                 
+                element: <CardDetails></CardDetails>,
+                loader: () => fetch('/data.json')
+              },
+              {
+                path: '/about',
+                element: <About></About>
             }
+              
         ]
     }    
 ]);

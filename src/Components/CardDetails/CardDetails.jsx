@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import CardDetail from "./CardDetail";
-
+import Navbar from "../../pages/Shared/Navbar/Navbar";
 
 
 
@@ -25,9 +25,11 @@ const CardDetails = () => {
    console.log(cardDetails);
 
     return (
+        <div><div><Navbar></Navbar></div>
         <div>
+            
            <CardDetail cardDetails={cardDetails}></CardDetail>
-        </div>
+        </div></div>
     );
 };
 
